@@ -30,7 +30,6 @@ gulp.task('browse', ['sass'], () => {
   });
 
   gulp.watch('dev/styles/*.sass', ['sass']);
-  // gulp.watch('dev/es6/*.js', ['js']);
   browserSync.watch(['dev/*.html', 'dev/styles/*.css', 'scripts/*.js']).on('change', browserSync.reload);
 });
 
@@ -41,7 +40,7 @@ gulp.task('del', () => {
 
 
 gulp.task('copy', () => {
-  let sourceFiles = ['dev/images/*.png', 'dev/fonts/*.*', 'dev/*.html'];
+  let sourceFiles = ['dev/images/*.*', 'dev/fonts/*.*', 'dev/*.html', 'dev/pages/*html'];
   return gulp
     .src(sourceFiles)
     .pipe(copy(destination, {
