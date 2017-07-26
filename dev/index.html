@@ -5,23 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link type="text/css" rel="stylesheet" href="styles/style.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 
 <div class="banner">
   <header>
-    <div class="header-hidden"></div>
-    <div class="header-visible">
+    <div class="header-container">
       <div class="logo">
         <img src="images/logo_face.png" alt="Лого Квест-комнаты Западня">
-        <h1>Квест-комната Западня</h1>
+        <h1>Западня</h1>
       </div>
+      <nav>
+        <ul>
+          <li><a href="#about">О квестах</a></li>
+          <li><a href="#rooms">Комнаты</a></li>
+          <li><a href="#offers">Акции</a></li>
+          <li><a href="#certificates">Сертификаты</a></li>
+        </ul>
+      </nav>
       <div class="order-call">
         <h4>+380936783456</h4>
         <h4>г. Николеаев</h4>
-        <div class="button"><span class="icon-phone">Заказать звонок</span></div>
+        <div class="button"><span class="icon-phone"></span><span>Заказать звонок</span></div>
       </div>
     </div>
   </header>
@@ -37,33 +44,35 @@
       <img alt="Квест-комната Хирург" src="images/18697990_376904729370303_4004683395113345919_n.jpg"/>
     </div>
     <div class="room-description">
-      Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc.
-      Quam euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies,
-      placerat morbi amet vel, nullam in in lorem vel. In molestie elit dui dictum, praesent nascetur pulvinar sed,
+      <p>Вы будете заперты в настоящей комнате – жилище маньяка. Ваша задача – всего лишь найти выход из его Западни и
+        остаться …живыми. Для этого нужно будет разгадывать головоломки, искать подсказки и разбираться с механизмами.</p>
     </div>
-    <p><a href="pages/room1.html"><span class="icon-ticket"></span>Записаться на игру</a></p>
+    <a href="pages/room1.html"><span class="icon-ticket"></span>Записаться на игру</a>
   </div>
   <div class="quest-room">
     <div class="img">
       <img alt="Квест-комната Зомби" src="images/18697990_376904729370303_4004683395113345919_n.jpg"/>
     </div>
     <div class="room-description">
-      Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc.
-      Quam euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies,
-      placerat morbi amet vel, nullam in in lorem vel. In molestie elit dui dictum, praesent nascetur pulvinar sed,
+      <p class="year">2028 год.</p>
+      <p> На земле зомби апокалипсис.</p>
+      <p>Убегая от зомби, в поисках пищи и убежища Вы попадаете в
+        заброшенный бункер…<br />
+      <span class="creepy">дверь за вами захлопнулась….</span> <br/>
+      Сможете ли Вы пережить 1,5 часа в этом мире постапокалипсиса?<p>
     </div>
-    <p><a href="pages/room1.html"><span class="icon-ticket"></span>Записаться на игру</a></p>
+    <a href="pages/room1.html"><span class="icon-ticket"></span>Записаться на игру</a>
   </div>
   <div class="quest-room">
     <div class="img">
       <img alt="Квест-комната Еще одна" src="images/18697990_376904729370303_4004683395113345919_n.jpg"/>
     </div>
     <div class="room-description">
-      Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc.
+      <p>Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc.
       Quam euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies,
-      placerat morbi amet vel, nullam in in lorem vel. In molestie elit dui dictum, praesent nascetur pulvinar sed,
+        placerat morbi amet vel, morbi amet vel.</p>
     </div>
-    <p><a href="pages/room1.html"><span class="icon-ticket"></span><span>Записаться на игру</span></a></p>
+    <a href="pages/room1.html"><span class="icon-ticket"></span><span>Записаться на игру</span></a>
   </div>
 </section>
 <!--Rooms catalogue: END-->
@@ -73,18 +82,41 @@
   <header>
     <h3><a href="#about">Что такое квест-комната</a></h3>
   </header>
-  <p>Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam
-    euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat
-    morbi amet vel, nullam in in lorem vel. In molestie elit dui dictum, praesent nascetur pulvinar sed, in dolor pede
-    in aliquam, risus nec error quis pharetra. Eros metus quam augue suspendisse, metus rutrum risus erat in. In
-    ultrices quo ut lectus, etiam vestibulum urna a est, pretium luctus euismod nisl, pellentesque
-    turpis hac ridiculus massa. Venenatis a taciti dolor platea, curabitur lorem platea urna odio, convallis sit
-    pellentesque lacus proin. Et ipsum velit diam nulla, fringilla vel tincidunt vitae, elit turpis tellus vivamus.</p>
+  <p>Квест в реальности — это развлекательная игра для команды из нескольких человек в специально подготовленном
+    помещении. Всё как в компьютерных играх, но только в настоящей комнате с осязаемыми предметами!
+
+    Зачастую квесты оборудованы красочными декорациями, механическими и электронными устройствами, а так же
+    специальными эффектами для полного погружения в атмосферу игры.
+
+    Сюжеты квестов в реальности могут быть самыми разными, от популярных фильмов и компьютерных игр до совершенно
+    уникальных авторских сценариев.
+
+    Ваша задача — выбраться из помещения, в котором Вас заперли. Для прохождения квеста не нужны эрудиция и физическая
+    сила, но понадобятся логическое мышление, внимательность к деталям и умение работать в команде.
+
+    Что Вы можете получить в наших квестах:
+    Масса новых впечатлений: Вы окажетесь в крайне нестандартных историях и ситуациях, с которыми Вы никогда бы не
+    столкнулись в реальной жизни!
+    Незабываемый День Рождения: приходите со своими друзьями в этот день, и мы обещаем – никто из Вас его не забудет!
+    Необычное свидание: если Вы не знаете, куда сходить со своей половинкой – то это больше не вопрос! Свидания
+    у нас очень сближают людей и запоминаются навсегда!
+    Интеллектуальный отдых: если Вы устали от кино и кафе и хотите отдохнуть с умом, наши квесты – это идеальный выбор.
+    Новые старые друзья: Вы сможете узнать себя, а также своих друзей и близких с совершенно новых сторон! Поверьте –
+    Вы многого не знаете о них!
+
+    Правила игры
+    Перед игрой мы попросим Вас оставить на ресепшене телефоны и планшеты, чтобы ничто не отвлекало Вас и не портило
+    атмосферу.
+    Единственное правило – не применять силу. Всё работает и открывается, только внимательно осмотритесь и подумайте.
+    Нисколько не беспокойтесь о беспорядке, но старайтесь ничего не ломать.
+    После завершения игры, пожалуйста, внимательно проверьте карманы – случайно унести с собой какую-нибудь
+    мелочь в пылу эмоций легко, а нам без этих мелочей потом очень сложно.
+    Невероятные эмоции и приключения ждут Вас!</p>
 </div>
 
 
 <!--Special offers: BEGIN-->
-<section class="special-offers">
+<section id="offers" class="special-offers">
   <header>
     <h3>Акции</h3>
   </header>
@@ -134,7 +166,7 @@
 <!--Special offers: END-->
 
 <!--How to get certificate: BEGIN-->
-<section class="certificates">
+<section id="certificates" class="certificates">
   <header>
     <h3>Сертификаты</h3>
   </header>
