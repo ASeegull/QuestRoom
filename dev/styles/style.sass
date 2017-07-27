@@ -111,6 +111,9 @@ section.rooms
   flex-flow: row nowrap
   img, div.quest-room
     width: 360px
+  img:hover
+    box-shadow: 1px 1px 20px white
+    transition: 0.5s
   div.quest-room
     margin: 0
     .room-description
@@ -123,11 +126,15 @@ section.rooms
           font-weight: bold
           font-size: larger
           font-style: italic
-      p.year
+      p.place
         text-align: end
         color: #9c1121
         font-family: monospace
-    a
+        padding-bottom: 15px
+        padding-top: 15px
+        &:hover
+          color: red
+    a.book
       font-size: 20px
       float: right
       color: #9c1121
@@ -151,6 +158,25 @@ section.rooms
   p
     font-size: 20px
     width: 75%
+    margin: 15px
+
+  ul
+    margin-left: 60px
+    li
+      margin-bottom: 15px
+      span.advantage
+        display: block
+        font-weight: bolder
+
+  h4
+    margin: 20px 0 24px 0
+    text-align: center
+    font-size: 23px
+    color: #9c1121
+
+  .accent
+    color: #9c1121
+
 
 section.special-offers
   padding: 50px 90px

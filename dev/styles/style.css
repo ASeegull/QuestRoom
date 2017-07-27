@@ -130,6 +130,12 @@ section.rooms {
   flex-flow: row nowrap; }
   section.rooms img, section.rooms div.quest-room {
     width: 360px; }
+  section.rooms img:hover {
+    -webkit-box-shadow: 1px 1px 20px white;
+    box-shadow: 1px 1px 20px white;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
   section.rooms div.quest-room {
     margin: 0; }
     section.rooms div.quest-room .room-description {
@@ -142,18 +148,22 @@ section.rooms {
           font-weight: bold;
           font-size: larger;
           font-style: italic; }
-      section.rooms div.quest-room .room-description p.year {
+      section.rooms div.quest-room .room-description p.place {
         text-align: end;
         color: #9c1121;
-        font-family: monospace; }
-    section.rooms div.quest-room a {
+        font-family: monospace;
+        padding-bottom: 15px;
+        padding-top: 15px; }
+        section.rooms div.quest-room .room-description p.place:hover {
+          color: red; }
+    section.rooms div.quest-room a.book {
       font-size: 20px;
       float: right;
       color: #9c1121;
       margin-top: 20px; }
-      section.rooms div.quest-room a:hover {
+      section.rooms div.quest-room a.book:hover {
         color: #ff020a; }
-      section.rooms div.quest-room a span[class|="icon"] {
+      section.rooms div.quest-room a.book span[class|="icon"] {
         font-size: 18px;
         padding-right: 5px; }
 
@@ -168,7 +178,22 @@ section.rooms {
     margin-bottom: 60px; }
   .about p {
     font-size: 20px;
-    width: 75%; }
+    width: 75%;
+    margin: 15px; }
+  .about ul {
+    margin-left: 60px; }
+    .about ul li {
+      margin-bottom: 15px; }
+      .about ul li span.advantage {
+        display: block;
+        font-weight: bolder; }
+  .about h4 {
+    margin: 20px 0 24px 0;
+    text-align: center;
+    font-size: 23px;
+    color: #9c1121; }
+  .about .accent {
+    color: #9c1121; }
 
 section.special-offers {
   padding: 50px 90px; }
