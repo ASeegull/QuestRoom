@@ -3,13 +3,14 @@
   padding: 0
   box-sizing: border-box
 
-body
+html
   font-family: 'Roboto', 'Helvetica', sans-serif
+  color: white
 
 @import "glyphicon.css"
 
 
-.banner header
+header.fixed
   height: 90px
   padding: 0 80px
   position: fixed
@@ -17,6 +18,7 @@ body
   background-color: #141414
   width: 100%
   opacity: 0.7
+  z-index: 9000
   .header-container
     display: flex
     flex-flow: row wrap
@@ -238,5 +240,24 @@ footer
   font-size: 18px
   padding: 10px 85px
 
+.zombie
+  background-color: #141414
+  header.fixed
+    top: 15px
+  .header-wrapper
+    height: 70vh
+    min-height: 400px
+.room2
+  position: relative
+  top: 120px
+  background: url(../images/main.jpg) no-repeat center
+  background-size: cover
+  height: 50vh
 
 
+main
+  padding: 60px 80px
+  h2
+    margin-left: 30px
+    font-size: 45px
+    margin-bottom: 60px
