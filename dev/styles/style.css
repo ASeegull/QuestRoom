@@ -284,6 +284,10 @@ footer {
 
 .zombie {
   background-color: #141414; }
+  .zombie h3 {
+    text-align: center;
+    font-size: 23px;
+    color: #9c1121; }
   .zombie header.fixed {
     top: 15px; }
   .zombie .header-wrapper {
@@ -313,3 +317,19 @@ main {
 .about-room {
   float: right;
   width: 50%; }
+
+section.order {
+  clear: both;
+  width: 80%;
+  margin: 0 auto;
+  position: relative; }
+  section.order .date-picker {
+    float: right; }
+
+.address {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center; }
+  .address p {
+    display: inline-block;
+    margin: 15px 20px; }
