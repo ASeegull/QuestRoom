@@ -393,3 +393,6 @@ section.order {
     margin: auto; }
     .feedback .feeds span {
       font-size: 33px; }
+
+.offers, .certificates {
+  color: #141414; }
