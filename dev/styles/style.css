@@ -322,9 +322,41 @@ section.order {
   clear: both;
   width: 80%;
   margin: 0 auto;
+  padding: 100px 0;
   position: relative; }
   section.order .date-picker {
-    float: right; }
+    float: right;
+    margin-bottom: 40px; }
+  section.order h3 {
+    margin-bottom: 80px; }
+  section.order .day {
+    border-top: 1px solid rgba(255, 255, 255, 0.73);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.73);
+    clear: both;
+    padding: 40px; }
+    section.order .day h5 {
+      font-size: 20px;
+      margin-bottom: 40px; }
+  section.order .choose-time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    section.order .choose-time .time {
+      border: 1px solid white;
+      border-radius: 15px;
+      width: 13%;
+      padding: 7px;
+      text-align: center; }
+      section.order .choose-time .time:hover {
+        background-color: rgba(255, 255, 255, 0.53);
+        cursor: pointer; }
 
 .address {
   width: 80%;
@@ -333,3 +365,31 @@ section.order {
   .address p {
     display: inline-block;
     margin: 15px 20px; }
+
+.limits [class|="icon"] {
+  margin: -3px;
+  font-size: 24px;
+  vertical-align: sub; }
+
+.feedback {
+  padding: 40px; }
+  .feedback h3 {
+    font-size: 25px; }
+  .feedback .feeds {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 20vh;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 30%;
+    margin: auto; }
+    .feedback .feeds span {
+      font-size: 33px; }
