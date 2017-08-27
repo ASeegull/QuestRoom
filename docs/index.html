@@ -1,240 +1,273 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8"/>
-  <title>Квест-комнаты Западня</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+  <link rel="manifest" href="images/icon/manifest.json">
+  <link rel="mask-icon" href="images/icon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="images/icon/favicon.ico">
+  <meta name="msapplication-config" content="images/icon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>Квест-комнаты Западня</title>
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css"/>
+  <link type="text/css" rel="stylesheet" href="styles/bootstrap-grid.min.css"/>
   <link type="text/css" rel="stylesheet" href="styles/style.css"/>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100&subset=latin,cyrillic' rel='stylesheet'
         type='text/css'>
 </head>
 <body>
 
+<!-- banner&nav: BEGIN -->
 
 <div class="banner">
-  <header class="fixed">
-    <div class="header-container">
-      <div class="logo">
-        <img src="images/logo_face.png" alt="Лого Квест-комнаты Западня">
-        <h1>Западня</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#about">О квестах</a></li>
-          <li><a href="#rooms">Комнаты</a></li>
-          <li><a href="#offers">Акции</a></li>
-          <li><a href="#certificates">Сертификаты</a></li>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/logo_face.png" alt="Лого Квест-комнаты Западня"
+                                            title="Нажми, чтоб вернуться на главную страницу" class="d-inline-block align-center">
+        ЗАПАДНЯ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">О квестах <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#rooms">Комнаты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#offers">Акции</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificates">Сертификаты</a>
+          </li>
         </ul>
-      </nav>
-      <div class="order-call">
-        <h4>+380936783456</h4>
-        <h4>г. Николаев</h4>
-        <div class="button"><span class="icon-phone"></span><span>Заказать звонок</span></div>
       </div>
+      <button type="button" class="btn btn-primary btn-danger" data-toggle="modal" data-target="#exampleModal">
+        <span class="icon-phone"></span>Заказать звонок
+      </button>
     </div>
-  </header>
-  <h2>Тебя ждут незбываемые приключения</h2>
-  <a href="#rooms"><span class="icon-arrow-down2"></span></a>
+  </nav>
+  <div class="jumbotron jumbotron-fluid">
+    <h2 class="display-4 text-light">Вас ждут незабываемые приключения!</h2>
+    <a href="#rooms"><span class="icon-arrow-down2 text-light"></span></a>
+  </div>
 </div>
 
 
 <!--Rooms catalogue: BEGIN-->
-<section id="rooms" class="rooms">
-  <div class="quest-room">
-    <div class="img">
-      <a href="pages/room1.html"><img alt="Квест-комната Хирург"
-                                      src="images/18697990_376904729370303_4004683395113345919_n.jpg"/></a>
-    </div>
-    <div class="room-description">
-      <a href="pages/room1.html"><p class="place">2017 год. Западня маньяка</p></a>
-      <p>Вы будете заперты в настоящей комнате – жилище маньяка. <em>Ваша задача</em> – всего лишь <span class="creepy"> найти выход из его Западни и
-        остаться<br/> …живыми.<br/></span> Для этого нужно будет разгадывать головоломки, искать подсказки и разбираться
-        с механизмами.</p>
-    </div>
-    <a class="book" href="pages/room1.html"><span class="icon-ticket"></span>Записаться на игру</a>
-  </div>
-  <div class="quest-room">
-    <div class="img">
-      <a href="pages/room2.html"><img alt="Квест-комната Зомби"
-                                      src="images/george-romero-vs-brad-pitt-walking-dead-208485.jpg"/></a>
-  </div>
-    <div class="room-description">
-      <a href="pages/room2.html"><p class="place">2028 год. Зомби-Апокалипсис</p></a>
-      <p> На земле зомби апокалипсис.</p>
-      <p>Убегая от зомби, в поисках пищи и убежища Вы попадаете в
-        заброшенный бункер…<br/>
-        <span class="creepy">дверь за вами захлопнулась….</span> <br/>
-        Сможете ли Вы пережить 1,5 часа в этом мире постапокалипсиса?
-      <p>
-    </div>
-    <a class="book" href="pages/room2.html"><span class="icon-ticket"></span>Записаться на игру</a>
-  </div>
-  <div class="quest-room">
-    <div class="img">
-      <a href="pages/room1.html"><img alt="Квест-комната Еще одна"
-                                      src="images/18697990_376904729370303_4004683395113345919_n.jpg"/></a>
-    </div>
-    <div class="room-description">
-      <a href="pages/room1.html"><p class="place">2017 год.</p></a>
-      <p>Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc.
-        Quam euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies,
-        placerat morbi amet vel, morbi amet vel.</p>
-    </div>
-    <a class="book" href="pages/room1.html"><span class="icon-ticket"></span><span>Записаться на игру</span></a>
-  </div>
-</section>
-<!--Rooms catalogue: END-->
-
-<!--What is quest room: BEGIN-->
-<div id="about" class="about">
-  <header>
-    <h3><a href="#about">Что такое квест-комната</a></h3>
-  </header>
-  <p><span class="accent">Квест в реальности</span> — это развлекательная игра для команды из нескольких человек в специально
-    подготовленном
-    помещении. Всё как в компьютерных играх, но только в <em class="accent">настоящей</em> комнате с <em class="accent">осязаемыми</em> предметами!
-  </p>
-  <p>
-    Зачастую квесты оборудованы красочными декорациями, механическими и электронными устройствами, а так же
-    специальными эффектами для полного погружения в атмосферу игры.
-  </p>
-  <p>
-    Сюжеты квестов в реальности могут быть самыми разными, от популярных фильмов и компьютерных игр до совершенно
-    уникальных авторских сценариев.
-  </p>
-  <p>
-    <span class="accent">Ваша задача — выбраться из помещения, в котором Вас заперли.</span> <br/> Для прохождения квеста не нужны
-    эрудиция и физическая
-    сила, но понадобятся логическое мышление, внимательность к деталям и умение работать в команде.
-  </p>
-  <h4>Что Вы можете получить в наших квестах:</h4>
-  <ul>
-    <li><span class="advantage">Масса новых впечатлений:</span> Вы окажетесь в крайне нестандартных историях и ситуациях, с которыми Вы
-      никогда бы не
-      столкнулись в реальной жизни!
-    </li>
-    <li><span class="advantage">Незабываемый День Рождения:</span> приходите со своими друзьями в этот день, и мы обещаем – никто из Вас
-      его не забудет!
-    </li>
-    <li><span class="advantage">Необычное свидание:</span> если Вы не знаете, куда сходить со своей половинкой – то это больше не вопрос!
-      Свидания
-      у нас очень сближают людей и запоминаются навсегда!
-    </li>
-    <li><span class="advantage">Интеллектуальный отдых:</span> если Вы устали от кино и кафе и хотите отдохнуть с умом, наши квесты – это
-      идеальный выбор.
-    </li>
-    <li><span class="advantage">Новые старые друзья:</span> Вы сможете узнать себя, а также своих друзей и близких с совершенно новых
-      сторон! Поверьте –
-      Вы многого не знаете о них!
-    </li>
-  </ul>
-  <h4>Правила игры</h4>
-  <p>Перед игрой мы попросим Вас оставить на ресепшене телефоны и планшеты, чтобы ничто не отвлекало Вас и не портило
-    атмосферу.</p>
-  <p><span class="accent">Единственное правило – не применять силу!</span> Всё <em class="accent">работает и открывается</em>, только внимательно осмотритесь и подумайте.
-    Нисколько не беспокойтесь о беспорядке, но старайтесь ничего не ломать.
-    После завершения игры, пожалуйста, <em class="accent">внимательно проверьте карманы</em> – случайно унести с собой какую-нибудь
-    мелочь в пылу эмоций легко, а нам без этих мелочей потом очень сложно.</p>
-  <h4>Невероятные эмоции и приключения ждут Вас!</h4>
-</div>
-
-
-<!--Special offers: BEGIN-->
-<section id="offers" class="special-offers">
-  <header>
-    <h3>Акции</h3>
-  </header>
-  <div class="offers">
-    <div class="offer">
-      <img src="images/069bbbd41caa7e931c6fe2dbef634646.jpg" alt=""/>
-      <div class="description">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam
-        lectus
-        at nunc. Quam
-        euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat
-        morbi amet vel, nullam in in lorem vel.
-      </div>
-    </div>
-    <div class="offer">
-
-      <img src="images/069bbbd41caa7e931c6fe2dbef634646.jpg" alt=""/>
-
-      <div class="description">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam
-        lectus
-        at nunc. Quam
-        euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat
-        morbi amet vel, nullam in in lorem vel.
-      </div>
-    </div>
-    <div class="offer">
-      <img src="images/069bbbd41caa7e931c6fe2dbef634646.jpg" alt=""/>
-      <div class="description">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam
-        lectus
-        at nunc. Quam
-        euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat
-        morbi amet vel, nullam in in lorem vel.
-      </div>
-    </div>
-    <div class="offer">
-
-      <img src="images/069bbbd41caa7e931c6fe2dbef634646.jpg" alt=""/>
-
-      <div class="description">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam
-        lectus
-        at nunc. Quam
-        euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat
-        morbi amet vel, nullam in in lorem vel.
-      </div>
-    </div>
-  </div>
-</section>
-<!--Special offers: END-->
-
-<!--How to get certificate: BEGIN-->
-<section id="certificates" class="certificates">
-  <header>
-    <h3>Сертификаты</h3>
-  </header>
-  <div class="certificates">
-    <div class="certificate">
-      <img src="images/Sertifikat-700x400.jpg" alt=""/>
-      <div class="description">
-        Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam
-        euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat
-        morbi amet vel, nullam in in lorem vel.
-      </div>
-    </div>
-    <div class="certificate">
-      <img src="images/Sertifikat-700x400.jpg" alt=""/>
-      <div class="description">
-        Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam
-        euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat
-        morbi amet vel, nullam in in lorem vel.
-      </div>
-    </div>
-    <div class="certificate">
-      <img src="images/Sertifikat-700x400.jpg" alt=""/>
-      <div class="description">
-        Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam
-        euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat
-        morbi amet vel, nullam in in lorem vel.
-      </div>
-    </div>
-  </div>
-  <article>
+<main>
+  <section id="rooms" class="rooms container-fluid">
     <header>
-      <h4>Как приобрести</h4>
+      <h2 class="text-center text-light">Посети одну из наших комнат!</h2>
     </header>
-    <p>Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam
-      euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat
-      morbi amet vel, nullam in in lorem vel. In molestie elit dui dictum, praesent nascetur pulvinar sed, in dolor pede
-      in aliquam, risus nec error quis pharetra. Eros metus quam augue suspendisse, metus rutrum risus erat in. In
-      ultrices quo ut lectus, etiam vestibulum urna a est, pretium luctus euismod </p>
-  </article>
-</section>
-<!--How to get certificate: END-->
+    <div class="container">
+    <div class="row">
+      <div class="d-flex justify-content-center">
+        <div class="quest-room col-6">
+          <div class="img">
+            <a href="pages/room1.html"><img alt="Квест-комната Западня маньяка"
+                                            src="images/S8qxEEP46vc.jpg"/></a>
+          </div>
+          <div class="room-description text-center">
+            <h3 class="place text-right"><a href="pages/room2.html">2017 год. Западня маньяка</a></h3>
+            <p class="text-right">Вы оказались заперты в жуткой комнате. Очевидно, что это жилище серийного маньяка.
+              Все прежние желания и проблемы забыты, у Вас всего лишь одна цель - <br /><span
+                    class="creepy"> найти выход из его Западни и
+        остаться<br/> …живыми.<br/></span> Любой ценой.</p>
+            <p class="book-tickets text-right"><a href="pages/room1.html"><span class="icon-ticket"></span>Записаться на
+              игру</a></p>
+          </div>
+        </div>
 
+        <div class="quest-room col-6">
+          <div class="img">
+            <a href="pages/room2.html"><img alt="Квест-комната Зомби"
+                                            src="images/ontrhCeqjeg.jpg"/></a>
+          </div>
+          <div class="room-description text-center">
+            <h3 class="place text-right"><a href="pages/room2.html">2028 год. Зомби-Апокалипсис</a></h3>
+            <p class="text-right"> На земле зомби апокалипсис.<br />
+            Убегая от зомби, в поисках пищи и убежища Вы попадаете в
+              заброшенный бункер… <br/>
+              <span class="creepy">дверь за вами захлопнулась….</span> <br/>
+              Сможете ли Вы пережить 1,5 часа в этом мире постапокалипсиса?
+            <p>
+          </div>
+          <p class="book-tickets text-right"><a href="pages/room2.html"><span class="icon-ticket"></span>Записаться на
+            игру</a></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--Rooms catalogue: END-->
+
+  <!--What is quest room: BEGIN-->
+  <section id="about" class="about">
+    <header>
+      <h2 class="text-center">Что такое квест-комната?</h2>
+    </header>
+    <p><span class="accent">Квест в реальности</span> — это развлекательная игра для команды из нескольких человек в
+      специально
+      подготовленном
+      помещении. Всё как в компьютерных играх, но только в <em class="accent">настоящей</em> комнате с <em
+              class="accent">осязаемыми</em> предметами!
+    </p>
+    <p>
+      Зачастую квесты оборудованы красочными декорациями, механическими и электронными устройствами, а так же
+      специальными эффектами для полного погружения в атмосферу игры.
+    </p>
+    <p>
+      Сюжеты квестов в реальности могут быть самыми разными, от популярных фильмов и компьютерных игр до совершенно
+      уникальных авторских сценариев.
+    </p>
+    <p>
+      <span class="accent">Ваша задача — выбраться из помещения, в котором Вас заперли.</span> <br/> Для прохождения
+      квеста не нужны
+      эрудиция и физическая
+      сила, но понадобятся логическое мышление, внимательность к деталям и умение работать в команде.
+    </p>
+    <h4>Что Вы можете получить в наших квестах:</h4>
+    <ul>
+      <li><span class="advantage">Масса новых впечатлений:</span> Вы окажетесь в крайне нестандартных историях и
+        ситуациях, с которыми Вы
+        никогда бы не
+        столкнулись в реальной жизни!
+      </li>
+      <li><span class="advantage">Незабываемый День Рождения:</span> приходите со своими друзьями в этот день, и мы
+        обещаем – никто из Вас
+        его не забудет!
+      </li>
+      <li><span class="advantage">Необычное свидание:</span> если Вы не знаете, куда сходить со своей половинкой – то
+        это больше не вопрос!
+        Свидания
+        у нас очень сближают людей и запоминаются навсегда!
+      </li>
+      <li><span class="advantage">Интеллектуальный отдых:</span> если Вы устали от кино и кафе и хотите отдохнуть с
+        умом, наши квесты – это
+        идеальный выбор.
+      </li>
+      <li><span class="advantage">Новые старые друзья:</span> Вы сможете узнать себя, а также своих друзей и близких с
+        совершенно новых
+        сторон! Поверьте –
+        Вы многого не знаете о них!
+      </li>
+    </ul>
+    <h4>Правила игры</h4>
+    <p>Перед игрой мы попросим Вас оставить на ресепшене телефоны и планшеты, чтобы ничто не отвлекало Вас и не портило
+      атмосферу.</p>
+    <p><span class="accent">Единственное правило – не применять силу!</span> Всё <em class="accent">работает и
+      открывается</em>, только внимательно осмотритесь и подумайте.
+      Нисколько не беспокойтесь о беспорядке, но старайтесь ничего не ломать.
+      После завершения игры, пожалуйста, <em class="accent">внимательно проверьте карманы</em> – случайно унести с собой
+      какую-нибудь
+      мелочь в пылу эмоций легко, а нам без этих мелочей потом очень сложно.</p>
+    <h4>Невероятные эмоции и приключения ждут Вас!</h4>
+  </section>
+
+
+  <!--Special offers: BEGIN-->
+  <section id="offers" class="special-offers">
+    <header>
+      <h2 class="text-center">Акции</h2>
+    </header>
+    <div class="row d-flex justify-content-between">
+      <div class="offer col-4">
+        <img class="rounded-circle mx-auto d-block" src="images/z-bday.jpg" alt=""/>
+        <h3 class="text-center">Скидка имениннику</h3>
+        <div class="description">Кроме незабываемых впечатлений, мы подарим имениннику и его коменде скидку 10%. Если Вы отмечаете позже или раньше даты,
+          Вы все равно можете воспользоваться скидкой - она действует 3 дня до и 3 дня после
+        </div>
+      </div>
+
+      <div class="offer col-4">
+        <img class="rounded-circle mx-auto d-block" src="images/Zombie-Student.jpg" alt=""/>
+        <h3 class="text-center">Все для<br/> молодежи</h3>
+        <div class="description">Для команд студентов и школьников с понедельника по четверг
+          действует скидка 100 грн. Приносите студенческие или дневники с хорошими оценками) Чур не прогуливать ;)
+        </div>
+      </div>
+
+      <div class="offer col-4">
+        <img class="rounded-circle mx-auto d-block" src="images/20140302-005430.jpg" alt=""/>
+        <h3 class="text-center"><br/>Ранние пташки</h3>
+        <div class="description">
+          Если Вы так любите квесты, что пришли в будний день с утра, то получите скидку на целых 40%.
+        </div>
+      </div>
+
+      <div class="black-box col-12">
+        <h2 class="text-center">Черный ящик</h2>
+        <p class="text-center">Это твоя возможность прямо сейчас получить скидку 5%</p>
+        <p class="text-center">Решишь нашу загадку?</p>
+        <div id="box">
+          <img class="shake rounded-circle mx-auto d-block" src="images/cube.jpg" alt=""/>
+          <div type="button" class="mx-auto d-block">Давай сыграем!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Special offers: END-->
+
+  <!--How to get certificate: BEGIN-->
+  <section id="certificates" class="certificates">
+    <header>
+      <h2 class="text-center">Сертификаты</h2>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="d-flex justify-content-center">
+          <div class="certificate col-6">
+            <div class="img">
+              <img src="images/Zapadna%20sertificat.jpg" alt=""/>
+            </div>
+            <div class="text-right p-5">
+              Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam
+              euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies,
+              placerat
+              morbi amet vel, nullam in in lorem vel.
+            </div>
+          </div>
+
+          <div class="certificate col-5">
+            <div class="img">
+              <a href="pages/room2.html"><img alt="Квест-комната Зомби"
+                                              src="images/Zombie%20sertificat.jpg"/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+<!--How to get certificate: END-->
+<div class="soc-media container-fluid">
+  <div class="d-flex flex-row justify-content-around">
+    <div class="media col-4 p-4"><a class="d-block mx-auto" href="#"><span class="icon-facebook"></span></a></div>
+    <div class="media col-4 p-4"><a class="d-block mx-auto" href="#"><span class="icon-vk"></span></a></div>
+    <div class="media col-4 p-4"><a class="d-block mx-auto" href="#"><span class="icon-mail"></span></a></div>
+  </div>
+</div>
 <footer>
-  <h6>&copy;Квест-комнаты Западня, 2017</h6>
+  <div class="container">
+  <h6>&copy;Квест-комнаты Западня. Николаев, 2017</h6>
+  </div>
 </footer>
-<script src="scripts/script.js"></script>
+<script src="scripts/popper.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+        crossorigin="anonymous"></script>
+<script src="scripts/bootstrap.min.js"></script>
 </body>

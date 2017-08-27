@@ -2,66 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/icon/favicon-16x16.png">
+  <link rel="manifest" href="../images/icon/manifest.json">
+  <link rel="mask-icon" href="../images/icon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="../images/icon/favicon.ico">
+  <meta name="msapplication-config" content="../images/icon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <title>Зомби-Апокалипсис</title>
+  <link type="text/css" rel="stylesheet" href="../styles/bootstrap.min.css"/>
+  <link type="text/css" rel="stylesheet" href="../styles/bootstrap-grid.min.css"/>
   <link type="text/css" rel="stylesheet" href="../styles/style.css"/>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100&subset=latin,cyrillic' rel='stylesheet'
         type='text/css'>
 </head>
-<body class="zombie">
-<div class="header-wrapper">
-  <header class="fixed">
-    <div class="header-container">
-      <div class="logo">
-        <img src="../images/logo_face.png" alt="Лого Квест-комнаты Западня">
-        <h1>Западня</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Главная</a></li>
-          <li><a href="../index.html#rooms">Комнаты</a></li>
-          <li><a href="#offers">Акции</a></li>
-          <li><a href="#certificates">Сертификаты</a></li>
+<body class="room">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="../images/logo_face.png" alt="Лого Квест-комнаты Западня"
+                                            title="Нажми, чтоб вернуться на главную страницу"
+                                            class="d-inline-block align-center">
+        ЗАПАДНЯ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html#about">О квестах <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#rooms">Комнаты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#offers">Акции</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#certificates">Сертификаты</a>
+          </li>
         </ul>
-      </nav>
-      <div class="order-call">
-        <h4>+380936783456</h4>
-        <h4>г. Николаев</h4>
-        <div class="button"><span class="icon-phone"></span><span>Заказать звонок</span></div>
+      </div>
+      <button type="button" class="btn btn-primary btn-danger" data-toggle="modal" data-target="#exampleModal">
+        <span class="icon-phone"></span>Заказать звонок
+      </button>
+    </div>
+  </nav>
+  <div class="container-fluid zombie"></div>
+</header>
+<main>
+  <section class="room-description">
+  <div class="container">
+    <header>
+      <h2>ZoMbiE Apocalypse</h2>
+    </header>
+    <div class="container-fluid row d-flex align-items-center">
+    <div class="limits col-6">
+      <ul class="list-unstyled">
+        <li><span class="icon-man"></span><span>Количество игроков: 2 - 4 человека</span>
+        </li>
+        <li><span class="icon-credit-card"></span><span>Цена с команды: 500 - 600 грн.</span><br />
+          5й игрок в команде: доплата 50 грн.</li>
+        <li><span class="icon-stopwatch"></span><span>Время: 90 минут</span></li>
+        <li><span class="icon-notification"></span><span>Сложность: выше среднего</span></li>
+      </ul>
+    </div>
+    <div id="room-atmosphere" class="carousel slide col-6" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="../images/eizzvuSj3mE.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../images/KU3CEplBD_8.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../images/TiCiHDeMfxs.jpg" alt="Third slide">
+        </div>
       </div>
     </div>
-  </header>
-  <div class="room2">
+    </div>
+    <div class="about-room"><span class="d-block text-right">2028 год.</span><br /> На земле зомби апокалипсис.
+      Убегая от зомби, в поисках пищи и убежища Вы попадаете
+      в заброшенный бункер… дверь за вами захлопнулась… Сможете ли Вы пережить 1,5 часа в этом мире постапокалипсиса?
+    </div>
   </div>
-</div>
-<main>
-  <header>
-    <h2>ZoMbiE Apocalypse</h2>
-  </header>
-  <div class="limits">
-    <ul>
-      <li><span class="icon-man"></span><span class="icon-man"></span><span class="icon-man"></span>Количество игроков: 2 - 4 человека</li>
-      <li><span class="icon-credit-card"></span>Цена с команды: 500 - 600 грн.</li>
-      <li>5й игрок в команде: доплата 50 грн.</li>
-      <li><span class="icon-stopwatch"></span>Время: 90 минут</li>
-      <li><span class="icon-notification"></span>Сложность: выше среднего</li>
-    </ul>
-  </div>
-  <div class="about-room">2028 год. На земле зомби апокалипсис. Убегая от зомби, в поисках пищи и убежища Вы попадаете
-    в заброшенный бункер… дверь за вами захлопнулась….. Сможете ли Вы пережить 1,5 часа в этом мире постапокалипсиса?</div>
-</main>
+  </section>
   <section class="order">
     <header>
-      <h3>Забронировать билет</h3>
+      <h2 class="text-center">Забронировать билет</h2>
     </header>
-    <div class="date-picker"><input type="date" name="data-picker"/> </div>
+    <input class="d-block ml-auto" type="date" name="data-picker"/>
     <div class="day"><h5>1 августа, вторник</h5>
       <div class="choose-time">
-    <div class="time">11.00</div>
-    <div class="time">13.00</div>
-    <div class="time">15.00</div>
-    <div class="time">17.00</div>
-    <div class="time">19.00</div>
-    <div class="time">21.00</div>
+        <div class="time">11.00</div>
+        <div class="time">13.00</div>
+        <div class="time">15.00</div>
+        <div class="time">17.00</div>
+        <div class="time">19.00</div>
+        <div class="time">21.00</div>
       </div>
     </div>
     <div class="day"><h5>2 августа, среда</h5>
@@ -96,32 +138,46 @@
     </div>
     <div class="day"><h5>5 августа, субота</h5>
       <div class="choose-time">
-      <div class="time">11.00</div>
-      <div class="time">13.00</div>
-      <div class="time">15.00</div>
-      <div class="time">17.00</div>
-      <div class="time">19.00</div>
-      <div class="time">21.00</div>
-    </div>
+        <div class="time">11.00</div>
+        <div class="time">13.00</div>
+        <div class="time">15.00</div>
+        <div class="time">17.00</div>
+        <div class="time">19.00</div>
+        <div class="time">21.00</div>
+      </div>
     </div>
   </section>
+</main>
 
-<div class="feedback">
-  <header><h3>Отзывы</h3></header>
-  <div class="feeds"><span class="icon-facebook"></span>
-    <span class="icon-vk"></span>
-    <span class="icon-mail"></span>
-  </div></div>
 <div class="google-maps">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d680.6004331829093!2d31.99358042925657!3d46.97344349869673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5c97a12d78d7b%3A0x1b696c28669f45e8!2z0LLRg9C70LjRhtGPINCd0ZbQutC-0LvRjNGB0YzQutCwLCA0OSwg0JzQuNC60L7Qu9Cw0ZfQsiwg0JzQuNC60L7Qu9Cw0ZfQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1497375738303" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d680.6004331829093!2d31.99358042925657!3d46.97344349869673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5c97a12d78d7b%3A0x1b696c28669f45e8!2z0LLRg9C70LjRhtGPINCd0ZbQutC-0LvRjNGB0YzQutCwLCA0OSwg0JzQuNC60L7Qu9Cw0ZfQsiwg0JzQuNC60L7Qu9Cw0ZfQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1497375738303"
+          width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
 </div>
-<div class="address">
-  <p>ул. Никольская 49, (угол ул.Соборной)</p>
+<div class="container>">
+  <div class="address d-flex justify-content-around align-items-center">
+    <p>ул. Никольская 49, (угол ул.Соборной)</p>
 
-  <p>Николаев, Украина</p>
-  <p><a href="tel://+380636912730">Тел: (063) 691-27-30</a></p></div>
+    <p>Николаев, Украина</p>
+    <p><a href="tel://+380636912730">Тел: (063) 691-27-30</a></p>
+  </div>
+</div>
+<div class="soc-media container-fluid">
+  <div class="d-flex flex-row justify-content-around">
+    <div class="media col-4 p-4"><a class="d-block mx-auto" href="#"><span class="icon-facebook"></span></a></div>
+    <div class="media col-4 p-4"><a class="d-block mx-auto" href="#"><span class="icon-vk"></span></a></div>
+    <div class="media col-4 p-4"><a class="d-block mx-auto" href="#"><span class="icon-mail"></span></a></div>
+  </div>
+</div>
 <footer>
-  <h6>&copy;Квест-комнаты Западня, 2017</h6>
+  <div class="container">
+    <h6>&copy;Квест-комнаты Западня. Николаев, 2017</h6>
+  </div>
 </footer>
+<script src="../scripts/popper.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+        crossorigin="anonymous"></script>
+<script src="../scripts/bootstrap.min.js"></script>
 </body>
 </html>
